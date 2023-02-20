@@ -1,0 +1,10 @@
+{
+  "name": "026_auto_ml_comparison",
+  "forwardPorts": [8888],
+  "dockerFile": "../Dockerfile",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    }
+  }
+}

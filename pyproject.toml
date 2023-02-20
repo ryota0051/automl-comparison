@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "work"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+torch = "1.12.1"
+torchvision = "0.13.1"
+torchtext = "0.13.1"
+autogluon = "0.6.2"
+FLAML = "1.1.2"
+tensorflow = "2.11.0"
+keras-tuner = {git = "https://github.com/keras-team/keras-tuner.git"}
+autokeras = "1.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "23.1.0"
+flake8 = "~6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
