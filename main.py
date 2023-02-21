@@ -74,7 +74,7 @@ def main():
     for auto_ml_name in result_dict.keys():
         elements = result_dict[auto_ml_name]
         print(auto_ml_name)
-        print(f"mse: {elements['mse']}, mae: {elements['mae']}")
+        print(f"rmse: {elements['rmse']}, mae: {elements['mae']}")
         y_pred = elements["pred"]
         plot_y_true_vs_y_pred(
             y_test.values,

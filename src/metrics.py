@@ -10,10 +10,10 @@ class MetricsHolder:
 
     def add_result(self, y_true: np.ndarray, y_pred: np.ndarray, result_name: str):
         mae = mean_absolute_error(y_true, y_pred)
-        mse = mean_squared_error(y_true, y_pred)
+        rmse = mean_squared_error(y_true, y_pred, squared=False)
         self.metrics_dict[result_name] = {
             "mae": float(mae),
-            "mse": float(mse),
+            "rmse": float(rmse),
             "pred": y_pred,
         }
 
